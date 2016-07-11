@@ -1,5 +1,5 @@
 #!/bin/bash
-PROJECT=TTND;BUCKET_INSTALL=LoadTesting_TTND;BUCKET_RESULT=LoadTestingResults_TTND;
+PROJECT=shruti;BUCKET_INSTALL=LoadTesting_shruti;BUCKET_RESULT=LoadTestingResults_shruti
 
 sudo apt-get update
 sudo apt-get install openjdk-7-jdk --fix-missing -yy

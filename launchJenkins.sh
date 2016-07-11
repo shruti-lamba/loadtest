@@ -27,7 +27,7 @@ sleep 10
 
 InstanceID=$(aws ec2 run-instances --image-id $AMI --iam-instance-profile Name=LoadTesting-Instance-Profile --key-name $KeyPairName --security-group-ids $SecurityGroup --instance-type $InstanceType --user-data file://jenkins_install.sh --subnet $Subnet --associate-public-ip-address --output json | grep "InstanceId" | awk '{print $2}' | sed 's/\"//g' | sed 's/\,//g')
 sleep 10
-InstanceID=i-cc78f05c
+#InstanceID=i-cc78f05c
 echo "Jenkins Master created, Instance id= "$InstanceID
 MasterIP=$(aws ec2 describe-instances --instance-id $InstanceID --output json | grep "PublicIpAddress" | awk '{print $2}' | sed 's/\"//g' | sed 's/\,//g')
 echo "Master IP= "$MasterIP
