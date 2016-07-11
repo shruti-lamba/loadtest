@@ -1,10 +1,10 @@
-export PROJECT=Gunjan
-export BUCKET_INSTALL=LoadTesting_Gunjan
-export BUCKET_RESULT=LoadTestingResults_Gunjan
+export PROJECT=shruti
+export BUCKET_INSTALL=LoadTesting_shruti
+export BUCKET_RESULT=LoadTestingResults_shruti
 export VPC=vpc-c2f27fa5
 export Subnet=subnet-a0d8f7f8
 export SecurityGroup=sg-498da132
-export KeyPairName=keyGunjan
+export KeyPairName=shruti_loadtest
 export AMI=ami-fce3c696
 export InstanceType=t2.micro
-export URL=https://github.com/gunjan-lal/repo2.git
+export URL=https://github.com/shruti-lamba/loadtest.git
